@@ -4,15 +4,21 @@ import java.util.Random;
 
 public class Program {
 	public static void main(String[] args) {
-		Random gerador = new Random();
-
-        //imprime sequência de 10 números inteiros aleatórios
-        for (int i = 1; i <= 6; i++) {
-        	
-        	System.out.println(gerador.nextInt(7));
-				
+		
+		try {
 			
-
-        }
+		
+		Random gerador = new Random();
+		
+			System.out.println("");
+			System.out.println("       Hitss Treinamento");
+			System.out.println("");
+			System.out.println("Saíra um número entre 1 e 6.");
+			System.out.println("");
+        	System.out.println("E o núemro é : " + gerador.nextInt(7));
+				
+		} catch (Exception e) {
+			System.out.println("Erro de processamento: " + e.getMessage());
+		}
 	}
 }
